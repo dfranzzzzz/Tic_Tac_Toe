@@ -28,7 +28,7 @@ module Display
     puts "The winner is #{player}"
   end
 
-  def invalid_grid
-    puts "Enter unoccupied grid."
+  def invalid_move
+    puts "Move is invalid. Enter a number within 1-9."
   end
 end

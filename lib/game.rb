@@ -53,8 +53,8 @@ class Game
   def player_turn
     num = input_grid
 
-    until board.grid_empty?(num)
-      invalid_grid
+    until board.move_valid?(num)
+      invalid_move
       num = input_grid
     end
 

@@ -22,10 +22,6 @@ class Board
     grid[grid_loc - 1] = symbol
   end
 
-  def grid_empty?(grid_loc)
-    grid[grid_loc - 1].is_a? Numeric
-  end
-
   def move_valid?(grid_loc)
     grid[grid_loc - 1] == grid_loc
   end
